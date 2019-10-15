@@ -1,5 +1,7 @@
 package by.epam.javatask2.models;
 
+import java.util.Objects;
+
 public  abstract class Taxi {
 
     private String number;
@@ -32,5 +34,20 @@ public  abstract class Taxi {
 
     public String getNumber(){
         return number;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Taxi taxi = (Taxi) o;
+        return price == taxi.price &&
+                Objects.equals(number, taxi.number) &&
+                Objects.equals(brand, taxi.brand);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(number, brand, price);
     }
 }

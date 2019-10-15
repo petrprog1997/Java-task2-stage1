@@ -9,4 +9,5 @@ public class CapacityComparator implements Comparator<FreightTaxi> {
     public int compare(FreightTaxi obj1, FreightTaxi obj2) {
         return obj1.getCurringCapacityInTons() - obj2.getCurringCapacityInTons();
     }
+
 }

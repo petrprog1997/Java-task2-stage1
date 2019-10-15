@@ -1,7 +1,6 @@
 package by.epam.javatask2.stringparser;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.List;
 
 public class StringParser {

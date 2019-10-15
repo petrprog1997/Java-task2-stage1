@@ -1,0 +1,8 @@
+INFO    2019-10-15 23:14:28,800 [main] by.epam.javatask2.txtreader.TxtFileReader  - Файл был найден и открыт
+INFO    2019-10-15 23:14:28,804 [main] by.epam.javatask2.txtreader.TxtFileReader  - 
+INFO    2019-10-15 23:16:26,663 [main] by.epam.javatask2.txtreader.TxtFileReader  - Файл был найден и открыт
+INFO    2019-10-15 23:16:26,666 [main] by.epam.javatask2.txtreader.TxtFileReader  - Чтение из файла было выполнено успешно
+INFO    2019-10-15 23:20:06,069 [main] by.epam.javatask2.txtreader.TxtFileReader  - Файл .\resources\ReadFromThisFile был найден и открыт
+INFO    2019-10-15 23:20:06,074 [main] by.epam.javatask2.txtreader.TxtFileReader  - Чтение из файла .\resources\ReadFromThisFile было выполнено успешно
+ERROR   2019-10-15 23:20:37,004 [main] by.epam.javatask2.txtreader.TxtFileReader  - Файл.\resources\ReadFromThisFilне был найден
+ERROR   2019-10-15 23:21:07,425 [main] by.epam.javatask2.txtreader.TxtFileReader  - Файл .\resources\ReadFromThisFil не был найден

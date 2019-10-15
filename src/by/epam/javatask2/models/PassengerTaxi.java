@@ -1,5 +1,7 @@
 package by.epam.javatask2.models;
 
+import java.util.Objects;
+
 public class PassengerTaxi extends Taxi {
 
     private int passengerCapacity;
@@ -48,5 +50,21 @@ public class PassengerTaxi extends Taxi {
                 "; Car passenger capacity : " + this.getPassengerCapacity() +
                 "; Car service level : " + this.getServiceLevel() +
                 "; Car's type of body : " + this.getCarBodyType();
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        if (!super.equals(o)) return false;
+        PassengerTaxi that = (PassengerTaxi) o;
+        return passengerCapacity == that.passengerCapacity &&
+                Objects.equals(serviceLevel, that.serviceLevel) &&
+                Objects.equals(carBodyType, that.carBodyType);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(super.hashCode(), passengerCapacity, serviceLevel, carBodyType);
     }
 }

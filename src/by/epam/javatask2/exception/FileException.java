@@ -6,7 +6,5 @@ public class FileException extends RuntimeException {
         e.getMessage();
     }
 
-    public FileException(String s, Exception e){
-
-    }
+    public FileException(String s, Exception e){ }
 }
